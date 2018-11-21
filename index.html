@@ -14,7 +14,7 @@
 	  		<img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
 	  	</a>
 	  	<div class="main-navigation-wrapper">
-	  		<div class="container">
+	  		
 	  	    <ul class="site-navigation">
 		  <li><a href="info.html">Информация</a></li>
 		  <li><a href="news.html">Новости</a></li>
@@ -23,11 +23,11 @@
 		  <li><a href="contacts.html">Контакты</a></li>
 		</ul>
 		<ul class="user-navigation">
-			<li class="login-link">
+			<li>
 			 <a class="login-link" href="login.html">Вход</a>
 			</li>
 		</ul>	
-		</div>
+		
 	</div>
 	  </nav>
 	</header>
@@ -67,19 +67,25 @@
 				<li class="news-item">
 					<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, АРТУР «БОРОВ» БОНДАРЬ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
 					<time datetime="2018-07-17">17 октября</time> <br>
-					<a class="button" href="news.html">Все новости</a>
 				</li>
+					
+				
 			</ul>
+			<a class="button" href="news.html">Все новости</a>
 		</section>
 			
-			<section class="gallery">
-				<h2>Фотогалерея</h2>
+		<section class="gallery">
+			<h2>Фотогалерея</h2>
+			<div class="gallery-container">
 				<figure class="gallery-content">
 					<a href="#"><img src="img/studio.jpg" width="268" height="164" alt="Интерьер"></a>
 				</figure>
-				<button class="button gallery-button gallery-button-back">Назад</button>
-				<button class="button gallery-button gallery-button-next">Вперед</button>
-			</section>
+				<div class="button-transfer">
+				<button class="button gallery-button gallery-button-back" type="button disabled">Назад</button>
+				<button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+				</div>	
+			</div>
+		</section>
 		</div>
 			<div class="index-columns">	
 				<section class="contacts">
