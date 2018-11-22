@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-
+	min-width: 960px;
 	font-family: "PT Sans Narrow", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
@@ -391,6 +391,7 @@ background-color: #ffffff;
 }
 .button-transfer {
 	padding-left: 9px;
+	margin-top: 40px;
 }
 .gallery-button-back {
 	left: 0;
@@ -402,9 +403,39 @@ background-color: #ffffff;
 	position: relative;
 	height: 260px;
 }
+.appointment-info {
+	margin: 0;
+	margin-bottom: 15px;
+}
+.appointment-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.appointment-item {
+	width: 140px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.appointment .button {
+	width: 100%;
+	margin-top: 10px;
+	margin-right: 0;
+
+}
+.appointment-item label {
+	display: block;
+	margin-bottom: 9px;
+	margin-left: 15px;
+}
 .appointment-item input {
 	font: inherit;
-
+	box-sizing: border-box;
+	width: 140px;
+	padding-top: 8px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 7px;
 	background-color: transparent;
 	border: 2px solid #000000;
 }
@@ -435,8 +466,18 @@ background-color: #ffffff;
 	
 	width: 145px;
 }
+.footer-social b {
+	display: block;
+	margin-bottom: 15px;
+}
 .footer-social ul {
 	list-style: none;
+	display: flex;
+	width: 141px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
 }
 .footer-contacts {
 	margin: 0;
@@ -444,9 +485,22 @@ background-color: #ffffff;
 	width: 320px;
 	margin-right: 80px;
 }
-}
+
 .social-button {
-	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 43px;
+	height: 43px;
+	background-color: #000000;
+}
+.social-button:hover,
+.social-button:focus {
+	background-color: #ffffff;
+}
+.social-button:hover path,
+.social-button:focus path {
+	fill: #000000;
 }
 .footer-copyright {
 	width: 200px;
@@ -455,6 +509,14 @@ background-color: #ffffff;
 	
 	margin-left: auto;
 }
+.fotter-copyright b {
+	display: block;
+	margin-bottom: 15px;
+}
+.footer-copyright .button {
+	display: block;
+	margin-right: 0;
+}
 .main-footer .container {
 	display: flex;
 }
@@ -462,6 +524,10 @@ background-color: #ffffff;
 .footer-copyright .button:focus {
 	color: #000000;
 	background-color: #ffffff;
+}
+.account {
+	margin: 0;
+	padding: 0;
 }
 .modal {
 	color: #000000;
