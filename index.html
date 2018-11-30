@@ -18,10 +18,11 @@
 	  	    <ul class="site-navigation">
 		  <li><a href="info.html">Информация</a></li>
 		  <li><a href="news.html">Новости</a></li>
-		  <li><a href="price.html">Прайс-лист</a></li>
+		  
 		  <li class="catalog.html"><a href="barbershop-item.html">Магазин</a></li>
 		  <li><a href="contacts.html">Контакты</a></li>
 		</ul>
+		
 		<ul class="user-navigation">
 			<li>
 			 <a class="login-link" href="login.html">Вход</a>
@@ -100,7 +101,8 @@
 						ПН—ПТ: С 10:00 ДО 22:00<br>
 						СБ—ВС: С 10:00 ДО 19:00<br>
 					</p>
-					<a class="button" href="map.html">Как проехать</a>
+					<a class="button contacts-button-map" href="map.html">Как проехать</a>
+
 					<a class="button" href="contacts.html">Обратная связь</a>
 					</section>
 					<section class="appointment">
@@ -173,7 +175,7 @@
 	</footer>
 	<section class="modal modal-login">
 		<h2 class="account">Личный кабинет</h2>
-		<p>Введите свой логин и пароль.</p>
+		<p class="modal-description">Введите свой логин и пароль.</p>
 		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
@@ -181,11 +183,11 @@
 			</p>
 			<p>
 				<label class="visually-hidden" for="user-password">Пароль</label>
-				<input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+				<input class="login-icon-password" type="password" name="password"  placeholder="Пароль">
 			</p>
-			<p class="login-password-info">
+			<p class="login-help">
 				<label class="login-checkbox">
-				<input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
+				<input type="checkbox" name="remember" class="visually-hidden" id="login-help">
 				<span class="checkbox-indicator"></span>
 				Запомните меня
 			</label>
@@ -201,11 +203,14 @@
 	</section>
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<p>
-			<img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул.Большая Конюшенная 19\8,САНКТ-ПЕТЕРБУРГ">
-		</p>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1543572595445" width="766" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
-		
+	
+
+	
+	<script src="js/popup.js"></script>
 </body>
 </html>
